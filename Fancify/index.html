@@ -4,22 +4,27 @@
 	<head>
 		<title>Fancify Shamcify</title>
 
-		<!-- link to your script file here -->
-		
+		<script src="fancifymytext.js" defer></script>
 	</head>
 
 	<body>
 		<h1>Fancify my Text</h1>
-		
+
 		<fieldset id="set1"> <!--makes a big ol' box surrounding the text box -->
 			<legend>Text</legend>
 			<textarea name="first" id="insert" placeholder="Insert text" cols="30" rows="4"></textarea>
 		</fieldset>
+
 		<fieldset id="set2">
 			<legend>Fancify</legend>
-			<button>Bigger!</button> <!--hehe~-->
-			<button>FancyShmancy</button>
-			<button>BoringBetty</button>
+			<button id="bigger">Bigger!</button>
+			<button id="moo">Moo</button>
+
+			<input type="radio" id="fancy" name="option">
+			<label for="fancy">FancyShmancy</label>
+
+			<input type="radio" id="boring" name="option" checked> <!--boring by default-->
+			<label for="boring">BoringBetty</label>
 		</fieldset>
 		
 	</body>
